@@ -8,6 +8,20 @@
       "when": 1736831237969,
       "tag": "0000_silent_nemesis",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1737624850808,
+      "tag": "0001_steady_virginia_dare",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1737643446590,
+      "tag": "0002_worried_mattie_franklin",
+      "breakpoints": true
     }
   ]
 }
