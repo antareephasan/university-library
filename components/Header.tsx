@@ -6,6 +6,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Session } from "next-auth";
+import { LogOut } from "lucide-react";
+import { Button } from "./ui/button";
+import { signOut } from "next-auth/react";
 
 const Header = ({ session }: { session: Session }) => {
   const pathname = usePathname();
@@ -34,6 +37,13 @@ const Header = ({ session }: { session: Session }) => {
               </AvatarFallback>
             </Avatar>
           </Link>
+        </li>
+
+        <li>
+          <LogOut
+            className="cursor-pointer text-[#FF5969] hover:text-red-600"
+            onClick={() => signOut()}
+          />
         </li>
       </ul>
     </header>
